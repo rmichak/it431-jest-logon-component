@@ -15,7 +15,7 @@ describe('The Logon Component', () => {
         const submitButton = screen.getByText('Submit');
         fireEvent.click(submitButton);
 
-        const errorMessage = screen.getByText(/Password must contain at least 1 upper case letter, 1 lower case letter, and be at least 8 characters long/i);
+        const errorMessage = screen.getByText(/Password must contain at least 1 upper case letter, 1 lower case letter, 1 number, and be at least 8 characters long/i);
         expect(errorMessage).toBeInTheDocument();
     });
 
