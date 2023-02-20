@@ -47,10 +47,11 @@ function Login() {
                 <Form.Label>Password:</Form.Label>
                 <Form.Control type="password" placeholder="Enter password" value={password} onChange={handlePasswordChange} />
             </Form.Group>
+            <br />
             <Button variant="primary" type="submit">
                 Submit
             </Button>
-
+            <br />
         </Form>
     );
 }
